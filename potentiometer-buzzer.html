@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+    <h2>What this arduino project is doing is creating crescent noises with the buzzer. </h2>
+
+    <p>When the potentiometer is all the way to the left, the LED turns on and the buzzer stops.</p>
+    
+    <p>When the potentiometer is going to the right, the noises will change going in a higher hertz.</p>
+    
+    <h4>I used the arduinos doors:</h4>
+    
+    <li>5v: for the positives things</li>
+    <li>GND: for the ground things</li>
+    <li>Digital 2: as an output to the buzzer </li>
+    <li>Digital 8: to an output to the LED</li>
+    <li>Analog A0: to read the informations of the potentiometer</li>
+
+    
+    <h4>Code:</h4>
+    <p>In the septup, I declared the doors that I was going to use, and began the serial monitor. 
+    In the loop i created variables:</p>
+        <p>var = the value that the potentiometer was giving me</p>
+        <p>Y = a map function that makes the whole code work.</p>
+            <p>To you understand better the map function go there https://www.arduino.cc/reference/en/language/functions/math/map/</p>
+    
+    <p>After having both variables i said to the serial monitor to show then.</p>
+    <p>Created the if loop that will look at the var variable and </p>
+    <p>if it is bigger than 1000 that means that is all the way to the left, it should turn the</p> 
+    <p>LED high and the buzzer off. </p>
+    <p>If is not bigger than 1000(else)</p>
+            <p>Should turn the buzzer ON with the Y hertz and turn the LED off. </p>
+    
+    
+    
+    
+    <div>
+    <p>If you have any doubts or questions, make a pull request or a comment, I’m going to check it later.</p>
+    </div>
+    
+</body>
+</html>
